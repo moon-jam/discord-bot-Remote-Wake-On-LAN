@@ -1,4 +1,4 @@
-# Discord Bot for Remote Wake-On-LAN with RPi3
+# Discord Bot for Remote Wake-On-LAN
 
 ## Overview
 
