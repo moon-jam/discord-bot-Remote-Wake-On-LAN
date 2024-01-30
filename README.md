@@ -12,8 +12,9 @@ This project is a Discord bot that uses the Wake-on-LAN protocol to remotely wak
 
 ## Setup
 
-1. Clone the repository.
-2. Install the required Python packages using pip or pip3, depending on your system:
+1. This application requires a small server, like a Raspberry Pi, that is always powered on to listen for commands and respond accordingly.
+2. Clone the repository on your server.
+3. Install the required Python packages using pip or pip3, depending on your system:
 
     ```bash
     # If pip is linked to Python 3 on your system
@@ -23,8 +24,8 @@ This project is a Discord bot that uses the Wake-on-LAN protocol to remotely wak
     pip3 install -r requirements.txt
     ```
 
-3. Install `nmap` on your system. Refer to the [official Nmap install guide](https://nmap.org/book/install.html) for instructions.
-4. Run the bot with either python or python3, depending on your system:
+4. Install `nmap` on your system. Refer to the [official Nmap install guide](https://nmap.org/book/install.html) for instructions.
+5. Run the bot with either python or python3, depending on your system:
 
     ```bash
     # If python is linked to Python 3 on your system
