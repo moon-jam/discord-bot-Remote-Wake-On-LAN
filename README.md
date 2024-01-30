@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a Discord bot that uses the Wake-on-LAN protocol to remotely wake up a computer. The bot listens to commands sent in Discord messages and uses the `nmap` tool to check the state of the target machine.
+This project is a Discord bot that uses the Wake-on-LAN protocol to remotely wake up a computer via a small server. The bot listens to commands sent in Discord messages and uses the `nmap` tool to check the state of the target machine.
 
 ## Features
 
