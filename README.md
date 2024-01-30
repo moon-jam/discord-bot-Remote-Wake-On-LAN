@@ -1,2 +1,63 @@
-# Wake-On-Wan_with_Discord-Bot_and_RPi3
-Simple python script to to set up WOW with Discord Bot on a RPi3 server, and doesn't require a static IP.
+# Discord Bot for Remote Wake-On-LAN with RPi3
+
+## Overview
+
+This project is a Discord bot that uses the Wake-on-LAN protocol to remotely wake up a computer. The bot listens to commands sent in Discord messages and uses the `nmap` tool to check the state of the target machine.
+
+## Features
+
+- Check the state of a remote computer (on/off).
+- Remotely turn on a computer using the Wake-on-LAN protocol.
+- Responds to commands sent via Discord messages.
+
+## Setup
+
+1. Clone the repository.
+2. Install the required Python packages using pip or pip3, depending on your system:
+
+    ```bash
+    # If pip is linked to Python 3 on your system
+    pip install -r requirements.txt
+
+    # If pip3 is linked to Python 3 on your system
+    pip3 install -r requirements.txt
+    ```
+
+3. Install `nmap` on your system. Refer to the [official Nmap install guide](https://nmap.org/book/install.html) for instructions.
+4. Run the bot with either python or python3, depending on your system:
+
+    ```bash
+    # If python is linked to Python 3 on your system
+    python bot.py
+
+    # If python3 is the command for Python 3 on your system
+    python3 bot.py
+    ```
+
+## Configuration
+
+Configuration variables are stored in `config.py`. You need to set the following:
+
+- `ip_address`: The IP address of the target machine.
+- `port`: The port to check for the machine's on/off state.
+- `mac`: The MAC address of the target machine for Wake-on-LAN.
+- `discord_bot_token`: The token of your Discord bot.
+- `state_keywords`: The keywords that the bot responds to for checking the state of the machine.
+- `on_keywords`: The keywords that the bot responds to for turning on the machine.
+
+## FAQ
+
+**Q: What is Wake-on-LAN?**  
+A: Wake-on-LAN is a protocol that allows a computer to be turned on or awakened by a network message.
+
+**Q: How do I get my Discord bot token?**  
+A: You can get your Discord bot token from the Discord developer portal. Check out this [guide](https://www.writebots.com/discord-bot-token/) for more details.
+
+**Q: The bot isn't responding to my commands. What's wrong?**  
+A: Make sure that the bot has the necessary permissions in your Discord server and you have enabled 'Privileged Gateway Intents' for your bot in the Discord developer portal.  
+![Access Privileged Gateway Intents](./pictures/Access%20Privileged%20Gateway%20Intents.png)
+Also, check that your keywords in `config.py` are set correctly.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
