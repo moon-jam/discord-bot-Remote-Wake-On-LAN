@@ -56,5 +56,10 @@ async def on_message(message):
             await message.channel.send("The computer has already started up!")
         else:
             await message.channel.send("The computer failed to start!")
+        return
+    
+    await message.channel.send("The keywords is invalid!")
+    await message.channel.send("Your message should start with one of these keywords to check the computer state: ```" + ', '.join(state_keywords) + "```")
+    await message.channel.send("Your message should start with one of these keywords to turn on the computer: ```" + ', '.join(on_keywords) + "```")
 
 client.run(discord_bot_token)
