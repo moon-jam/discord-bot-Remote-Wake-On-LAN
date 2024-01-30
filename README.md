@@ -58,6 +58,9 @@ A: Make sure that the bot has the necessary permissions in your Discord server a
 ![Access Privileged Gateway Intents](./pictures/Access%20Privileged%20Gateway%20Intents.png)
 Also, check that your keywords in `config.py` are set correctly.
 
+**Q: Where should I run this script?**  
+A: This script is designed to be run on a device that's always powered on, like a Raspberry Pi or a dedicated server. This ensures that the script can always listen for commands and respond accordingly.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
